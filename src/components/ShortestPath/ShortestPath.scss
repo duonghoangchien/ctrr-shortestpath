@@ -1,0 +1,64 @@
+#shortest-path {
+	min-height: 100vh;
+	padding: 0px 80px;
+	display: flex;
+	justify-content: space-around;
+	.shortest-path-details {
+		padding-top: 100px;
+		text-align: left;
+		h1 {
+			text-align: center;
+		}
+
+		label {
+			padding-right: 20px;
+		}
+		select {
+			cursor: pointer;
+		}
+		button {
+			margin-top: 10px;
+			cursor: pointer;
+
+			background-color: #fff;
+			border: 1px solid #d5d9d9;
+			border-radius: 8px;
+			box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+			box-sizing: border-box;
+			color: #0f1111;
+			display: inline-block;
+			font-family: "Amazon Ember", sans-serif;
+			font-size: 13px;
+			line-height: 29px;
+			padding: 0 10px 0 11px;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			vertical-align: middle;
+		}
+
+		button:hover {
+			background-color: #f7fafa;
+		}
+
+		button:focus {
+			border-color: #008296;
+			box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+			outline: 0;
+		}
+	}
+
+	.maps {
+		padding-top: 100px;
+		padding-left: 30px;
+		img {
+			width: 600px;
+		}
+		span {
+			font-size: 14px;
+		}
+	}
+}

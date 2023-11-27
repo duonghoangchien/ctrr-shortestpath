@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import dijkstra from "dijkstrajs";
+import ShortestPath from "./components/ShortestPath/ShortestPath";
+import Welcome from "./components/Welcome/Welcome";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ModalBox from "./components/ModalBox/ModalBox";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	useEffect(() => {
+		AOS.init();
+	}, []);
+	return (
+		<div className="App">
+			<ModalBox />
+			<Welcome />
+			<ShortestPath />
+		</div>
+	);
 }
 
 export default App;
